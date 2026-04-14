@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostNet V2</title>
+    <style>
+        body { font-family: 'Courier New', Courier, monospace; background-color: #121212; color: #00ff00; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; background: #1e1e1e; padding: 20px; border-radius: 8px; border: 1px solid #333; }
+        input, button { display: block; width: 100%; margin: 10px 0; padding: 10px; background: #2a2a2a; color: #00ff00; border: 1px solid #444; box-sizing: border-box; }
+        button { background: #004400; cursor: pointer; font-weight: bold; }
+        button:hover { background: #006600; }
+        .hidden { display: none; }
+        #system-messages { color: #ff5555; margin-bottom: 15px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>GhostNet Terminal</h2>
+    <div id="system-messages"></div>
+
+    <div id="auth-section">
+        <h3>Access Portal</h3>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        
+        <button onclick="login()">Login</button>
+        <button onclick="register()">Register (Visitor)</button>
+    </div>
+
+<div id="chat-section" class="hidden">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3>Secure Connection Established</h3>
+            <div>
+                <label for="cell-selector" style="color: #00ffff;">Active Cell: </label>
+                <select id="cell-selector" onchange="fetchMessages()" style="background: #222; color: #00ff00; border: 1px solid #444; padding: 5px;">
+                    <option value="cell_alpha">Cell Alpha</option>
+                    <option value="cell_beta">Cell Beta</option>
+                    <option value="cell_omega">Cell Omega</option>
+                </select>
+            </div>
+        </div>
+        <p>Logged in as: <span id="current-user"></span> | Role: <span id="current-role"></span></p>
+        
+        <div id="messages-display" style="height: 200px; overflow-y: auto; border: 1px solid #444; padding: 10px; margin-bottom: 10px; background: #111;">
+            </div>
+
+        <input type="text" id="message-content" placeholder="Type secure message...">
+        <input type="number" id="message-ttl" placeholder="TTL (minutes)" value="1" min="1">
+        <button onclick="sendMessage()">Send Encrypted Message</button>
+        <button onclick="fetchMessages()" style="background: #444;">Refresh Messages</button>
+        <button onclick="logout()" style="background: #660000;">Disconnect</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

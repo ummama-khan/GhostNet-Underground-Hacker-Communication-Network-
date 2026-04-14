@@ -1,0 +1,103 @@
+2026-04-14 20:01:14,424 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-14 20:01:14,424 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-14 20:22:30,262 - INFO - USER REGISTERED: sofia_test with role Visitor
+2026-04-14 20:22:30,276 - INFO - 127.0.0.1 - - [14/Apr/2026 20:22:30] "[35m[1mPOST /api/register HTTP/1.1[0m" 201 -
+2026-04-14 20:26:53,780 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 20:26:53,783 - INFO - 127.0.0.1 - - [14/Apr/2026 20:26:53] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 20:29:42,359 - WARNING - ACCESS DENIED: sofia_test attempted restricted access.
+2026-04-14 20:29:42,360 - INFO - 127.0.0.1 - - [14/Apr/2026 20:29:42] "[31m[1mPOST /api/admin/promote HTTP/1.1[0m" 403 -
+2026-04-14 20:33:16,510 - WARNING - ACCESS DENIED: sofia_test attempted restricted access.
+2026-04-14 20:33:16,511 - INFO - 127.0.0.1 - - [14/Apr/2026 20:33:16] "[31m[1mPOST /api/messages/send HTTP/1.1[0m" 403 -
+2026-04-14 20:33:26,352 - WARNING - ACCESS DENIED: sofia_test attempted restricted access.
+2026-04-14 20:33:26,353 - INFO - 127.0.0.1 - - [14/Apr/2026 20:33:26] "[31m[1mPOST /api/messages/send HTTP/1.1[0m" 403 -
+2026-04-14 20:34:56,456 - WARNING - ACCESS DENIED: sofia_test attempted restricted access.
+2026-04-14 20:34:56,457 - INFO - 127.0.0.1 - - [14/Apr/2026 20:34:56] "[31m[1mPOST /api/messages/send HTTP/1.1[0m" 403 -
+2026-04-14 20:40:12,468 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 20:40:12,469 - INFO - 127.0.0.1 - - [14/Apr/2026 20:40:12] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 20:41:05,293 - INFO - MESSAGE SENT: sofia_test posted to cell_alpha
+2026-04-14 20:41:05,294 - INFO - 127.0.0.1 - - [14/Apr/2026 20:41:05] "POST /api/messages/send HTTP/1.1" 200 -
+2026-04-14 20:57:53,177 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-14 20:57:53,177 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-14 21:00:09,149 - INFO - 127.0.0.1 - - [14/Apr/2026 21:00:09] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-04-14 21:00:11,195 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 21:00:11,196 - INFO - 127.0.0.1 - - [14/Apr/2026 21:00:11] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 21:25:33,176 - INFO - 127.0.0.1 - - [14/Apr/2026 21:25:33] "OPTIONS /api/messages/send HTTP/1.1" 200 -
+2026-04-14 21:25:33,235 - INFO - MESSAGE SENT: sofia_test posted to cell_alpha
+2026-04-14 21:25:33,237 - INFO - 127.0.0.1 - - [14/Apr/2026 21:25:33] "POST /api/messages/send HTTP/1.1" 200 -
+2026-04-14 21:25:33,256 - INFO - 127.0.0.1 - - [14/Apr/2026 21:25:33] "OPTIONS /api/messages/cell_alpha HTTP/1.1" 200 -
+2026-04-14 21:25:33,311 - INFO - 127.0.0.1 - - [14/Apr/2026 21:25:33] "GET /api/messages/cell_alpha HTTP/1.1" 200 -
+2026-04-14 21:46:59,688 - INFO - 127.0.0.1 - - [14/Apr/2026 21:46:59] "OPTIONS /api/messages/cell_alpha HTTP/1.1" 200 -
+2026-04-14 21:46:59,704 - INFO - 127.0.0.1 - - [14/Apr/2026 21:46:59] "GET /api/messages/cell_alpha HTTP/1.1" 200 -
+2026-04-14 21:47:05,156 - INFO - 127.0.0.1 - - [14/Apr/2026 21:47:05] "OPTIONS /api/messages/cell_alpha HTTP/1.1" 200 -
+2026-04-14 21:47:05,175 - INFO - 127.0.0.1 - - [14/Apr/2026 21:47:05] "GET /api/messages/cell_alpha HTTP/1.1" 200 -
+2026-04-14 21:48:35,722 - INFO - 127.0.0.1 - - [14/Apr/2026 21:48:35] "OPTIONS /api/messages/cell_alpha HTTP/1.1" 200 -
+2026-04-14 21:48:35,738 - INFO - 127.0.0.1 - - [14/Apr/2026 21:48:35] "GET /api/messages/cell_alpha HTTP/1.1" 200 -
+2026-04-14 21:48:57,685 - INFO - 127.0.0.1 - - [14/Apr/2026 21:48:57] "OPTIONS /api/messages/send HTTP/1.1" 200 -
+2026-04-14 21:48:57,695 - INFO - MESSAGE SENT: sofia_test posted to cell_alpha
+2026-04-14 21:48:57,696 - INFO - 127.0.0.1 - - [14/Apr/2026 21:48:57] "POST /api/messages/send HTTP/1.1" 200 -
+2026-04-14 21:48:57,706 - INFO - 127.0.0.1 - - [14/Apr/2026 21:48:57] "OPTIONS /api/messages/cell_alpha HTTP/1.1" 200 -
+2026-04-14 21:48:57,746 - INFO - 127.0.0.1 - - [14/Apr/2026 21:48:57] "GET /api/messages/cell_alpha HTTP/1.1" 200 -
+2026-04-14 21:49:00,787 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:00] "OPTIONS /api/messages/cell_beta HTTP/1.1" 200 -
+2026-04-14 21:49:00,805 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:00] "GET /api/messages/cell_beta HTTP/1.1" 200 -
+2026-04-14 21:49:02,815 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:02] "OPTIONS /api/messages/cell_alpha HTTP/1.1" 200 -
+2026-04-14 21:49:02,840 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:02] "GET /api/messages/cell_alpha HTTP/1.1" 200 -
+2026-04-14 21:49:18,154 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:18] "OPTIONS /api/messages/cell_beta HTTP/1.1" 200 -
+2026-04-14 21:49:18,171 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:18] "GET /api/messages/cell_beta HTTP/1.1" 200 -
+2026-04-14 21:49:27,886 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:27] "OPTIONS /api/messages/send HTTP/1.1" 200 -
+2026-04-14 21:49:27,904 - INFO - MESSAGE SENT: sofia_test posted to cell_beta
+2026-04-14 21:49:27,906 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:27] "POST /api/messages/send HTTP/1.1" 200 -
+2026-04-14 21:49:27,925 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:27] "OPTIONS /api/messages/cell_beta HTTP/1.1" 200 -
+2026-04-14 21:49:27,974 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:27] "GET /api/messages/cell_beta HTTP/1.1" 200 -
+2026-04-14 21:49:32,257 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:32] "OPTIONS /api/messages/cell_alpha HTTP/1.1" 200 -
+2026-04-14 21:49:32,274 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:32] "GET /api/messages/cell_alpha HTTP/1.1" 200 -
+2026-04-14 21:49:34,695 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:34] "OPTIONS /api/messages/cell_beta HTTP/1.1" 200 -
+2026-04-14 21:49:34,711 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:34] "GET /api/messages/cell_beta HTTP/1.1" 200 -
+2026-04-14 21:49:36,905 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:36] "OPTIONS /api/messages/cell_omega HTTP/1.1" 200 -
+2026-04-14 21:49:36,920 - INFO - 127.0.0.1 - - [14/Apr/2026 21:49:36] "GET /api/messages/cell_omega HTTP/1.1" 200 -
+2026-04-14 22:00:36,825 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-14 22:00:36,825 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-14 22:02:05,721 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-14 22:02:05,722 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-14 22:31:17,665 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:31:17,667 - INFO - 127.0.0.1 - - [14/Apr/2026 22:31:17] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:31:22,242 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:31:22,243 - INFO - 127.0.0.1 - - [14/Apr/2026 22:31:22] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:31:26,553 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:31:26,554 - INFO - 127.0.0.1 - - [14/Apr/2026 22:31:26] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:31:30,714 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:31:30,715 - INFO - 127.0.0.1 - - [14/Apr/2026 22:31:30] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:31:35,502 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:31:35,503 - INFO - 127.0.0.1 - - [14/Apr/2026 22:31:35] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:31:39,761 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:31:39,762 - INFO - 127.0.0.1 - - [14/Apr/2026 22:31:39] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:31:44,580 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:31:44,581 - INFO - 127.0.0.1 - - [14/Apr/2026 22:31:44] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:31:59,594 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:31:59,594 - INFO - 127.0.0.1 - - [14/Apr/2026 22:31:59] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:32:04,406 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:32:04,407 - INFO - 127.0.0.1 - - [14/Apr/2026 22:32:04] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:32:09,146 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:32:09,147 - INFO - 127.0.0.1 - - [14/Apr/2026 22:32:09] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:32:14,535 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:32:14,536 - INFO - 127.0.0.1 - - [14/Apr/2026 22:32:14] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:33:47,091 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-14 22:33:47,092 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-14 22:33:55,780 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:33:55,782 - INFO - 127.0.0.1 - - [14/Apr/2026 22:33:55] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:33:59,683 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:33:59,684 - INFO - 127.0.0.1 - - [14/Apr/2026 22:33:59] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:34:04,441 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:34:04,442 - INFO - 127.0.0.1 - - [14/Apr/2026 22:34:04] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:34:08,371 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:34:08,372 - INFO - 127.0.0.1 - - [14/Apr/2026 22:34:08] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:34:13,103 - INFO - LOGIN SUCCESS: sofia_test
+2026-04-14 22:34:13,104 - INFO - 127.0.0.1 - - [14/Apr/2026 22:34:13] "POST /api/login HTTP/1.1" 200 -
+2026-04-14 22:34:14,893 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: auth.login
+2026-04-14 22:34:14,894 - INFO - 127.0.0.1 - - [14/Apr/2026 22:34:14] "[31m[1mPOST /api/login HTTP/1.1[0m" 429 -
+2026-04-14 22:34:16,747 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: auth.login
+2026-04-14 22:34:16,749 - INFO - 127.0.0.1 - - [14/Apr/2026 22:34:16] "[31m[1mPOST /api/login HTTP/1.1[0m" 429 -
