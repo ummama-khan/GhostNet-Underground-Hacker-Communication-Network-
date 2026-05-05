@@ -1,0 +1,10 @@
+{
+    "overwatch_admin": {
+        "password": "pbkdf2:sha256:1000000$H03aLU9Qno5OpnPy$cd9b66e985456a813e70768739094e85934fab0b8aecd65c3b9e28042894e129",
+        "role": "Admin"
+    },
+    "test_agent": {
+        "password": "pbkdf2:sha256:1000000$nHxiLHIp2vo3aebj$06db7bf47657b6976a1e3d56fb58df87c2ba493dd778a7cd4bf2f93a599b869d",
+        "role": "Member"
+    }
+}

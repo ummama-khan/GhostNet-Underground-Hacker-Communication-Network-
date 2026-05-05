@@ -1,0 +1,10 @@
+{
+    "sofia_test": {
+        "password": "pbkdf2:sha256:1000000$PXnzFwhOc4jsx5Ow$344d5d520db06aa619e739ca4446c406591b52842f1da547cfbfd30ecd3af968",
+        "role": "Admin"
+    },
+    "overwatch_admin": {
+        "password": "pbkdf2:sha256:1000000$rZOsv9SQnNEefVB6$e891b4b0a0138d28b2fe3acf5646ca3631d2693c1eb6fa25984bceefe9f35735",
+        "role": "Admin"
+    }
+}
